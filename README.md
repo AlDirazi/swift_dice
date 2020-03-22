@@ -1,1 +1,3 @@
-# swift_dice
+# First Swift APP
+DICE
+
