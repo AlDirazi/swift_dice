@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,18 +15,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="8gR-E7-bKs">
-                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-1" translatesAutoresizingMaskIntoConstraints="NO" id="Day-Lg-ffw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="gSQ-Da-Eo1">
+                                <rect key="frame" x="213" y="122" width="181" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="8R1-MU-2V8"/>
-                                    <constraint firstAttribute="height" constant="300" id="cY5-sv-gZW"/>
+                                    <constraint firstAttribute="height" constant="128" id="Mws-iA-Gpa"/>
+                                    <constraint firstAttribute="width" constant="181" id="QuX-gD-MQS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="SpH-DC-ifH">
+                                <rect key="frame" x="20" y="653" width="181" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="kiD-rW-rKx"/>
+                                    <constraint firstAttribute="height" constant="128" id="qv3-Fx-FLL"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="8gR-E7-bKs" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Kaz-9u-t2N"/>
-                            <constraint firstItem="8gR-E7-bKs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="OXx-Bb-VcV"/>
+                            <constraint firstItem="SpH-DC-ifH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1rd-Ig-zF8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gSQ-Da-Eo1" secondAttribute="bottom" constant="612" id="8L7-te-Tpm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SpH-DC-ifH" secondAttribute="bottom" constant="81" id="99F-Y6-kqc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gSQ-Da-Eo1" secondAttribute="trailing" constant="20" id="9cO-Vd-uSB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SpH-DC-ifH" secondAttribute="trailing" constant="213" id="BEP-dc-y53"/>
+                            <constraint firstItem="SpH-DC-ifH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="609" id="Dhf-i8-Gvd"/>
+                            <constraint firstItem="gSQ-Da-Eo1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="213" id="WVG-b2-1wQ"/>
+                            <constraint firstItem="gSQ-Da-Eo1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="bFG-Qq-9qH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -37,6 +54,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="6" width="244" height="240"/>
+        <image name="1" width="244.33332824707031" height="240"/>
+        <image name="6" width="244.33332824707031" height="240"/>
+        <image name="icon-1" width="280" height="286.33334350585938"/>
     </resources>
 </document>

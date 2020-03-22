@@ -10,11 +10,9 @@ import UIKit
 
 class MainVC: UIViewController {
 
-
     @IBOutlet weak var diceImage1: UIImageView!
     @IBOutlet weak var diceImage2: UIImageView!
     
-        // Do any additional setup after loading the view.
     @IBAction func startBtn(_ sender: Any) {
     let num = randomNumber()
     diceImage1.image = UIImage(named: "\(num.oneTosix()).png")
