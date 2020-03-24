@@ -13,6 +13,11 @@ class MainVC: UIViewController {
     @IBOutlet weak var diceImage1: UIImageView!
     @IBOutlet weak var diceImage2: UIImageView!
     
+    override func viewDidLoad() {
+        diceImage2.image = #imageLiteral(resourceName: "1")
+        diceImage1.image = #imageLiteral(resourceName: "1")
+    }
+    
     @IBAction func startBtn(_ sender: Any) {
     let num = randomNumber()
     diceImage1.image = UIImage(named: "\(num.oneTosix()).png")
